@@ -36,7 +36,7 @@ namespace SeleniumCheckBoxDemo.Tests
             _seleniumCheckDemoPuslapis.ElemntsCheckAll().AssertShownMessageCheckAll("Uncheck All");
             // _seleniumCheckDemoPuslapis.FindElemntsUncheckAll("Uncheck All");
         }
-        //uncheck all //
+        //uncheck all 
         [Test]
         public static void MultiUnChecksPatikrinimas()
         {
