@@ -29,14 +29,14 @@ namespace SeleniumCheckBoxDemo.Tests
             _seleniumCheckDemoPuslapis.FirstCheckBox().AssertShownMessage("Success - Check box is checked");
         }
 
-
+        //check all
         [Test]
         public static void MultiChecksPatikrinimas()
         {
             _seleniumCheckDemoPuslapis.ElemntsCheckAll().AssertShownMessageCheckAll("Uncheck All");
             // _seleniumCheckDemoPuslapis.FindElemntsUncheckAll("Uncheck All");
         }
-
+        //uncheck all //
         [Test]
         public static void MultiUnChecksPatikrinimas()
         {
