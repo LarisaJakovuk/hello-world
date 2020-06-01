@@ -41,7 +41,7 @@ namespace SeleniumCheckBoxDemo.Tests
         public static void MultiUnChecksPatikrinimas()
         {
 
-            _seleniumCheckDemoPuslapis.ElemntsCheckAll().AssertShownMessageCheckAll("Check All");
+            _seleniumCheckDemoPuslapis.ElementuPatikrinimasPoMygtukoPaspaudimo();
         }
 
         [OneTimeTearDown]

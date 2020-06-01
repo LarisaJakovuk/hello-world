@@ -60,6 +60,27 @@ namespace SeleniumCheckBoxDemo.Pages
             Assert.AreEqual(expectedResult, actualResult, $"Turejo buti mygtukas su tekstu {expectedResult} o gavome - {actualResult} ");
             return this;
         }
+        public SeleniumChekboxPage ElementuPatikrinimasPoMygtukoPaspaudimo()
+        {
+            
+            if (_buttonCheck1.GetAttribute("value") == "Check All")
+            {
+                ElemntsCheckAll();
+            }
+            else
+            {
+                _buttonCheck1.Click();
+                int i = 1;
+                foreach (IWebElement element in _cheks)
+                {
+                    Assert.AreEqual(false, element.Selected, $"Tikejomes kad elementas {i} ne pažymėtas, o gavome - kad pažymėtas");
+                    i++;
+                }
+            }
+            return this;
 
+
+
+        }
     }
 }
