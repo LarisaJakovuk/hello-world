@@ -64,10 +64,8 @@ namespace SeleniumCheckBoxDemo.Pages
         {
             
             if (_buttonCheck1.GetAttribute("value") == "Check All")
-            {
-                ElemntsCheckAll();
-            }
-            else
+                           ElemntsCheckAll();
+                       
             {
                 _buttonCheck1.Click();
                 int i = 1;
@@ -78,9 +76,6 @@ namespace SeleniumCheckBoxDemo.Pages
                 }
             }
             return this;
-
-
-
         }
     }
 }
